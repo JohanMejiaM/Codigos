@@ -34,3 +34,14 @@ git init
 git status
 ```
 
+* Agrega los archivos a la memoria de la PC
+
+```bash
+git add.
+```
+
+* Crea el registro de los cambios realizados
+
+```bash
+git commit -m "comentario"
+```
