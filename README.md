@@ -45,3 +45,23 @@ git add.
 ```bash
 git commit -m "comentario"
 ```
+
+* Poder ver historial de commits
+
+[ ] Git log retorna un `id` con este id vamos a poder ver el detalle de los cambios que se hicieron en ese commit
+
+```bash
+git log
+```
+
+*Para poder ver el detalle (contenido) del commit usamos 
+
+```bash
+git show id-del commit
+```
+
+* Para poder subir los codigos locales a la remoto (web) se utiliza
+
+```bash
+git push origin main
+```
