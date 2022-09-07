@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tipos de inputs</title>
+</head>
+<body>
+        <form action="">
+            <div>
+            <!-- Label: Especificar el control del formulario -->
+            <label for="">Nombre</label>
+            <input type="text" placeholder="Nombre">
+            </div>
+            <div>
+
+                <label for="">Apellido</label>
+                <input type="text" placeholder="Apellido">
+             </div>
+             <div>
+                <label for="">Edad</label>
+                <input type="number" placeholder="Edad">
+              </div>
+             <div>
+                <label for="">Email</label>
+                <input type="email" placeholder="Nombre">
+             </div>
+             <div>
+                <label for="">Fecha de Nacimiento</label>
+                <input type="date" placeholder="Nombre">
+             </div>
+             <div>
+                <label for="">Ingresa tu password</label>
+                <input type="password">
+             </div>
+             <div>
+                <!-- Con la opción For, me va a permitir activar el checkbox cuando de click en futbol -->
+                <label for="">Elige tu Hobbie</label>
+                <label for="futbol">futbol</label>
+                <input id="futbol" type="checkbox">
+                <!-- Otra manera simplificada de hacerlo -->
+                <label>
+                    Tenis
+                    <input type="checkbox">
+                </label>
+               <!-- Checked: Para que se encuentre con check por defecto -->
+               <label>
+                Voley
+                <input type="checkbox" checked>
+                </label>
+             </div>
+             <div>
+            <label>
+                Elige tu Sexo
+            </label>
+            <!-- El input "radio" nos va a permitir elegir entre un valor u otro valor -->
+            <!-- Para que esto funcione debemos agrupar las opciones en un grupo. Como es en el ejemplo siguiente con "sex" -->
+            <label>
+                F
+                <input name="sex" type="radio">
+            </label>
+            <label>
+                M
+                <input name="sex" type="radio">
+            </label>
+             </div>
+        </form>
+</body>
+</html>
