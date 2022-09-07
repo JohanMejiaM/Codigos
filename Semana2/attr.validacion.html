@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attr validation</title>
+</head>
+<body>
+    <form action=""></form>
+    <!-- Required: Opción obligatoria para llenar -->
+    <!-- Minlength y Maxlength: Determinar la cantidad de letras a rellenar -->
+    <!-- Min y Max: Determinan el rango numérico en un tipo "number" -->
+    <!-- Disabled: Deshabilita el recuadro a escribir. OJO: Si se deshabilita, no envia información al presionar un botón-->
+    <!-- Readonly: Habilita el recuadro para solo lectura, pero manda la información al presionar un botón -->
+    <div>
+        <label for="">
+        Nombre
+        <input name="name" value="Johan" type="text" minlength="4" maxlength="10" required disabled>
+        </label>
+    </div>
+    <div>
+        <label for="">
+        Apellido
+        <input name="lastname" value="Mejia" type="text" required readonly>
+        </label>
+    </div>
+    <div>
+        <label for="">
+        Correo
+        <input name="email" type="email" required>
+        </label>
+    </div>
+    <div>
+        <label for="">
+        Edad
+        <input name="age" type="number" min="18" max="45" required>
+        </label>
+    </div>
+    <div>
+        <label for="">
+        Password
+        <input name="password" type="password" required>
+        </label>
+    </div>
+    <div>
+        <select name="" id="">
+            <option value="">Selecciona tu Pais</option>
+            <option value="1">Perú</option>
+            <option value="2">Chile</option>
+            <option value="3">Uruguay</option>
+        </select>
+    </div>
+    <button>enviar</button>
+
+</body>
+</html>
