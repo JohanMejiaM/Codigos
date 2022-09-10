@@ -1,0 +1,108 @@
+<html>
+    <!-- Nombre de la página web -->
+    <head>
+        <title>
+            Inicio
+        </title>
+        <!-- Se crea un vinculo con la carpeta CSS con sus propiedades -->
+        <link rel="stylesheet" href="./css/Styles Ejercicio.css.css">
+    </head>
+    <body>
+        <!-- Ctrl + k + u (comentario en windows)-->
+        <!-- cmd + / (comentario en mac) -->
+        <!-- Header, Main y Footer me permitirá especificar y generar mayor orden al momento de programar -->
+        <!--Encabezado-->
+        <!-- div es un elemento para englobar un grupo de elementos, donde se puede generar cambios a todo el grupo con otros elementos -->
+         <div style="width: 800px; margin: 10px auto;">
+            <header style="text-align: center;">
+                <h1>Apple.com</h1>
+                <!-- P = Párrafo -->
+                <p>Productos Top</p>
+            </header>
+            <!-- Cuerpo de la página -->
+            <main>
+                <!-- Se coloca id del archivo Styles de la carpeta CSS-->
+                <div id="div_temas" >
+                    <h4>Temas</h4>
+                    <!-- Contenedor de listas -->
+                    <ul>
+                        <!-- El hijo de la lista     -->
+                        <li>
+                            <a href="http://127.0.0.1:5500/Semana2/Formulario.html">Formulario</a>
+                        </li>
+                        <li>
+                            <a href="./tablas.html">Tablas</a>
+                        </li>
+                    </ul>
+                 </div>
+                <!-- Creación de una tabla / tr = fila (table row) / td = celdas (table data) / th = Fila encabezado(table header)-->
+                <table>
+                    <!-- Una fila con tres celdas -->
+                    <tr>
+                        <td>
+                            <div style="border: 2px solid #ccc; border-radius: 10px; padding: 10px; margin: 20;">
+                                <h2 style="width: 200px">iPhone 13</h2>
+                                <!-- img = imagen / src = Indica la ruta de la imagen / alt = Permite escuchar lo que se encuentra escrito -->
+                                <img  width="200px" src="https://i.linio.com/p/bb59a49b41823a4feb037e4c9d438a7b-product.webp" alt="Foto de un iPhone 13 Negro">
+                            </div>
+                        </td>
+                        <td>
+                            <div style="border: 2px solid #ccc; border-radius: 10px; padding: 10px; margin: 20;">
+                                <!-- Se le agregará "width" como una propiedad de HTML para cambiar el tamaño -->
+                                <h2 style="width: 200px">Macbook Pro</h2>
+                                 <img width="200px" src="https://i.blogs.es/e1fe2b/apple-macbook-pro-16/1024_2000.jpg" alt="">
+                            </div>
+                        </td>
+                        <td>
+                            <div style="border: 2px solid #ccc; border-radius: 10px; padding: 10px; margin: 20;">
+                                <h2>Airpods Pro</h2>
+                                <img width="200px" src="https://www.mac-center.com.pe/ccstore/v1/images/?source=/file/v5458383034345506899/products/Airpods_Pro.jpg&height=475&width=475" alt="">
+                            </div>
+                        </td>
+                    </tr>
+                </table>    
+                    <!-- Inicio del ejercicio de CSS (Samsung y Huawei) -->
+                <h1 class="titulo" role="titulo">Samsung</h1>
+                <h1 class="titulo" id="titulo_Huawei">Huawei</h1>  
+                <h2>Jerarquías de CSS:</h2>
+                <h4>Sólo aplica cuando desde diversos métodos, se le está intentando aplicar diversos valores a la misma propiedad de un elemento.</h4>
+                <table class="big_table" cellpadding="30">
+                    <tr>
+                        <th>Método</th>
+                        <th>Peso</th>
+                    </th>
+                    <tr>
+                        <td>Selector de elemento</td>
+                        <td>elemento</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>Selector de clase</td>
+                        <td>.class_Name</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td>Selector de atributo</td>
+                        <td>selector[atributo]</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td>Selector de ID</td>
+                        <td>#id</td>
+                        <td>4</td>
+                    </tr>
+                    <tr>
+                        <td>HTML style</td>
+                        <td>style=""</td>
+                        <td>5</td>
+                    </tr>
+                </table> 
+                <!-- Fin del ejercicio CSS -->
+            </main>
+            <!-- Parte inferior de la página -->
+            <footer>
+                <p style="text-align: center;">Hecho con cariño por Código</p>
+            </footer>
+         </div>
+    </body>
+</html>

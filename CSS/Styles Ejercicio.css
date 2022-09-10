@@ -1,0 +1,39 @@
+/* Selectores por Jerarquia (Menor a Mayor)*/
+
+/* Selector de elemento */
+/*Se va a aplicar a todos los h1 */
+h1{
+    color: green;
+    background-color: beige;
+    padding: 20px;
+    text-align: center;
+    font-size: 20px;
+}
+
+h1[role="titulo"] {
+    font-size: 40px;
+}
+
+/* Selector de clase*/
+
+.titulo{
+    color: red;
+    font-size: 30px;
+    background-color: aqua;
+}
+
+.big_table{
+    font-size: 30px;
+    border: 1px solid black;
+}
+
+
+/* Selector de id */
+#titulo_huawei {
+    color: yellow;
+}
+
+#div_temas {
+    display: none !important;
+}
+
