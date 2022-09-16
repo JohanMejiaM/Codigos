@@ -102,3 +102,8 @@ button {
     /* gap:espacio entre elementos (en este caso dentro del button) */
     gap: 15px;
 }
+
+/* Al pasar por el botón sale una manito */
+button:hover {
+    cursor: pointer;
+}
