@@ -1,0 +1,42 @@
+
+
+
+/*box-sizing:border-box me permitirá usar el borde adento sin espacio extra */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: red;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+
+}
+
+.padre {
+    display: flex;
+    /*Esto va a respetar el ancho de la pantalla y cuando un elemento ocupe más de lo dado, lo mandará a la siguiente fila */
+    height: 100vh;
+    flex-wrap: wrap;
+    /* Justify-content: Permite alinear los elementos  */
+    /* flex-start: izquierda */
+    /* center: centro */
+    /* flex-end: derecha */
+    /* space-between: manda los elementos de extremo a extremo */
+    /* space-around: Se parece a space-between pero le da unos margenes al inicio y final*/
+    /* space-evenly: los espacios entre elementos son iguales */
+    justify-content: space-between;
+    /* align-items: Es la propiedad de flex que permite alinear elementos
+    veticalmente y comparte todas las propiedas de justify-content */
+    align-items: center;
+}
+
+
+.hijo   {
+    width: 25%;
+    height: 100px;
+    border: solid 1px green;
+    background-color: #fff;
+}

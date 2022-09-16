@@ -126,3 +126,7 @@ h1{
     content: ".00";
     font-size: 12px;
 }
+
+#div_temas {
+    display: block;
+}
