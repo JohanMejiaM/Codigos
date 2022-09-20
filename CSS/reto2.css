@@ -1,0 +1,167 @@
+* {
+    font-family: "outfit", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(217, 54%, 11%);
+    width: 100vw;
+    height: 100vh;
+}
+
+.carta {
+    display: flex;
+    flex-direction: column;
+    background-color: hsl(216, 50%, 16%);
+    border-radius: 10px;
+    height: 535px;
+    width: 320px;
+    padding: 15px;
+    box-shadow: 0px 15px 12px 12px hsla(240, 97%, 4%, 0.196);
+}
+
+
+/* Imagen y efecto hover */
+.image-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-logo {
+    background: url("../images-reto2/image-equilibrium.jpg");
+    width: 280px;
+    height: 280px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 8px;
+    margin: 8px;
+}
+
+.effect-hover{
+    background-color: cyan;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 280px;
+    height: 280px;
+    border-radius: 8px;
+    /* Se coloca opacidad 0 para que al cruzar el cursor la opacidad aumente */
+    opacity: 0;
+}
+
+.image-view{
+    background: url("../images-reto2/icon-view.svg");
+    width: 40px;
+    color: white;
+    opacity: 0;
+}
+
+.effect-hover:hover {
+    opacity: 0.69;
+    cursor: pointer;
+}
+
+.image-view:hover{
+    opacity: 1;
+}
+
+
+.title {
+    color: white;
+    font-size: 20px;
+    margin: 8px;
+    font-weight:500;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.text-content {
+    color: hsl(215, 51%, 80%);
+    margin: 8px;  
+    font-size: 15px;  
+}
+
+/* Contenido del Precio y Tiempo */
+.content-ETH{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+
+/* Precio de NFT */
+.price {
+    display: flex;
+    justify-content: flex-start;
+}
+
+
+.image-price{
+    background: url(../images-reto2/icon-ethereum.svg);
+    width: 20px;
+    background-repeat: no-repeat;
+}
+
+.real-price{
+    color: cyan;
+}
+
+
+/* Tiempo del NFT */
+.time{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.image-clock {
+    background: url(../images-reto2/icon-clock.svg);
+    width: 20px;
+    background-repeat: no-repeat;
+}
+
+.real-time{
+    color: hsl(215, 51%, 80%);
+}
+
+
+.linea{
+    border: 1px solid hsl(215, 51%, 80%);
+    margin-top: 15px;
+}
+
+/* Creador */
+.creator {
+    display: flex;
+    justify-content: flex-start;
+    align-content: center;
+    margin: 20px;
+}
+
+.image-creator{
+    width: 30px;
+    height: 30px;
+    border: 2px solid white;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.text-creator{
+    color: hsl(215, 51%, 80%);
+    margin-right: 4px;
+    margin-top: 5px;
+}
+
+.name-creator{
+    color: white;
+        margin-top: 5px;
+}
